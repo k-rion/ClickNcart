@@ -1,0 +1,244 @@
+/* General page */
+.salepage {
+  background-color: #ffffff;
+  color: #1f2937; /* dark gray */
+}
+
+/* Services */
+.services {
+  background-color: #a7b8ef4a;
+  padding: 20px;
+}
+.service-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.service-display {
+  display: flex;
+}
+.service-icon {
+  display: flex;
+  justify-content: center;
+}
+.service-icon i {
+  font-size: 2rem;
+  align-content: center;
+  margin-right: 20px;
+}
+.service-txts {
+  align-content: center;
+}
+.service-txts h2 {
+  font-family: sans-serif;
+}
+.service-txts p {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #555;
+}
+
+/* Services */
+.customer-says {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9fbfd;
+}
+
+.customer-says h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.customer-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.customer-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* pushes name to bottom */
+  text-align: center;
+  min-height: 200px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.stars {
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-style: italic;
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.reviewer-name {
+  font-weight: bold;
+  color: #002147;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.mobile-menu.hidden {
+  display: none;
+}
+
+.mobile-menu a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #4b5563;
+}
+
+.mobile-menu a:hover {
+  color: #1e3a8a;
+}
+
+.mobile-menu .sale {
+  color: red;
+}
+.mobile-menu .sale:hover {
+  color: darkred;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  padding: 0.75rem 2rem;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+  transition: 0.3s;
+}
+
+/* Products */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  background-color: #f3f4f6;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #9ca3af;
+}
+
+.product-card h4 {
+  font-weight: 500;
+  margin: 1rem;
+}
+
+.product-card p {
+  font-weight: 300;
+  margin: 0 1rem 1rem;
+  font-size: 1.25rem;
+}
+
+.product-card button {
+  margin: 0 1rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #1e40af;
+  transition: 0.3s;
+}
+
+/* Notification */
+.notification {
+  position: fixed;
+  top: 5rem;
+  right: 1rem;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 50;
+}
+
+.notification.show {
+  transform: translateX(0);
+}

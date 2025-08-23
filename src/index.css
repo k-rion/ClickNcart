@@ -1,0 +1,13 @@
+/* Reset some defaults */
+body,
+h1,
+h2,
+h4,
+p,
+button,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}

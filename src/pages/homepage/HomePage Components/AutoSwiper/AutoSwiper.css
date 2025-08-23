@@ -1,0 +1,99 @@
+.swiper-container {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 600px;
+  align-items: center;
+  align-content: center;
+}
+
+.swiper-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.swiper-subtitle {
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-rating {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-desc {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.tes-profile {
+  margin-top: 0.5rem;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto 15px;
+}
+
+/* Position the bullets properly under the swiper */
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Default bullet */
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 0.6;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background: #f5a623; /* gold like stars */
+  opacity: 1;
+  transform: scale(1.3);
+}

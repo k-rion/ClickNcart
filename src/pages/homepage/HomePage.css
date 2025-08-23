@@ -1,0 +1,243 @@
+.hero {
+  padding: 4rem 2rem;
+  background: linear-gradient(90deg, #fff 40%, #aec8fc57 60%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-grid .hero-content {
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.hero-content .highlight {
+  color: #1e3a8a; /* blue */
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+  justify-content: flex-start;
+}
+
+.btn-primary {
+  background: #1e3a8a;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+.btn-primary:hover {
+  transform: translateY(-5px);
+  background-color: #2861fc;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #1e3a8a;
+  color: #1e3a8a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+.btn-outline:hover {
+  transform: translateY(-5px);
+  background-color: #1e3a8a;
+  color: #fff;
+}
+
+/* Stats */
+.hero-stats {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  text-align: center;
+}
+
+.hero-stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.hero-stats h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 0.25rem;
+  line-height: 1;
+}
+
+.hero-stats p {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Image placeholder */
+.hero-image-placeholder {
+  background: #f3f5fa;
+  border-radius: 1rem;
+  padding: 4rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  min-height: 300px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-placeholder i {
+  font-size: 3rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+/* Categories */
+.categories {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2rem;
+}
+
+.categories p {
+  color: #444;
+  font-size: 0.85rem;
+  width: 450px;
+  margin: 1rem auto;
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Discount Section and Subscribe */
+.discount-signup {
+  padding: 2rem 2rem;
+  background-color: #e8f0ff; /* Light blue */
+}
+
+.discount-wrapper,
+.subscribe-wrapper {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.discount-title,
+.subscribe-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+.discount-subtitle,
+.subscribe-subtitle {
+  color: #555;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.discount-form,
+.subscribe-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  width: 400px;
+  justify-content: center;
+  margin: auto;
+}
+
+.discount-input,
+.subscribe-input {
+  flex: 1;
+  padding: 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.2s ease-in;
+}
+
+.discount-input:focus,
+.subscribe-input:focus {
+  transform: translateY(-5px);
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 2px rgba(29, 78, 216, 0.2);
+}
+
+.discount-btn,
+.subscribe-btn {
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.discount-btn:hover,
+.subscribe-btn:hover {
+  background-color: #1e40af;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px 4px rgba(29, 78, 216, 0.2);
+}
+
+.discount-terms,
+.subscribe-terms {
+  font-size: 0.7rem;
+  color: #6b7280;
+  margin-top: 0.8rem;
+}
+
+.autoswiper {
+  background: #1d4ed8;
+}

@@ -1,0 +1,55 @@
+/* Base hidden state */
+.reveal {
+  opacity: 0;
+  transition: all 1s ease;
+  will-change: opacity, transform;
+}
+
+/* Active state */
+.reveal.show {
+  opacity: 1;
+}
+
+/* ===== Animation Types ===== */
+
+/* Fade In (no movement) */
+.fadeIn {
+  transform: none;
+}
+
+/* Fade Out (reverse fade) — won't animate in, used for exit animations */
+.fadeOut.show {
+  opacity: 0;
+}
+
+/* Fade Up */
+.fadeUp {
+  transform: translateY(30px);
+}
+.fadeUp.show {
+  transform: translateY(0);
+}
+
+/* Fade Down */
+.fadeDown {
+  transform: translateY(-30px);
+}
+.fadeDown.show {
+  transform: translateY(0);
+}
+
+/* Slide Left */
+.slideLeft {
+  transform: translateX(30px);
+}
+.slideLeft.show {
+  transform: translateX(0);
+}
+
+/* Slide Right */
+.slideRight {
+  transform: translateX(-30px);
+}
+.slideRight.show {
+  transform: translateX(0);
+}

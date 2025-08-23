@@ -1,0 +1,47 @@
+/* Footer */
+.global-footer {
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.global-footer h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.global-footer p {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #9ca3af;
+  margin-bottom: 2rem;
+}
+
+.global-footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.global-footer-links a {
+  display: inline-block;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.global-footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.global-copy-right {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 1rem;
+}
